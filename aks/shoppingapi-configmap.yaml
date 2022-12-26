@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shoppingapi-configmap
+data:
+  shoppingapi_url: http://shoppingapi-service
+  elastic_url: http://elasticsearch-master.elastic-system.svc.cluster.local:9200
+  connection_string: mongodb://adminuser:password123@mongo-service:27017

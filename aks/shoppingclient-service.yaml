@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shoppingclient-service
+spec:
+  selector:
+    app: shoppingclient
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
